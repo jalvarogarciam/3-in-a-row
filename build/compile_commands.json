@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/alvaro/Desktop/3inarow/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/alvaro/Desktop/3inarow/build -I/home/alvaro/Desktop/3inarow/c++ -I/home/alvaro/Desktop/3inarow/build/3raya_autogen/include -I/home/alvaro/Desktop/3inarow/c++/./include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -pthread -g -std=gnu++17 -fPIC -o CMakeFiles/3raya.dir/3raya_autogen/mocs_compilation.cpp.o -c /home/alvaro/Desktop/3inarow/build/3raya_autogen/mocs_compilation.cpp",
+  "file": "/home/alvaro/Desktop/3inarow/build/3raya_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/3raya.dir/3raya_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/alvaro/Desktop/3inarow/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/alvaro/Desktop/3inarow/build -I/home/alvaro/Desktop/3inarow/c++ -I/home/alvaro/Desktop/3inarow/build/3raya_autogen/include -I/home/alvaro/Desktop/3inarow/c++/./include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -pthread -g -std=gnu++17 -fPIC -o CMakeFiles/3raya.dir/src/conexion.cpp.o -c /home/alvaro/Desktop/3inarow/c++/src/conexion.cpp",
+  "file": "/home/alvaro/Desktop/3inarow/c++/src/conexion.cpp",
+  "output": "CMakeFiles/3raya.dir/src/conexion.cpp.o"
+},
+{
+  "directory": "/home/alvaro/Desktop/3inarow/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/alvaro/Desktop/3inarow/build -I/home/alvaro/Desktop/3inarow/c++ -I/home/alvaro/Desktop/3inarow/build/3raya_autogen/include -I/home/alvaro/Desktop/3inarow/c++/./include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -pthread -g -std=gnu++17 -fPIC -o CMakeFiles/3raya.dir/src/ficha.cpp.o -c /home/alvaro/Desktop/3inarow/c++/src/ficha.cpp",
+  "file": "/home/alvaro/Desktop/3inarow/c++/src/ficha.cpp",
+  "output": "CMakeFiles/3raya.dir/src/ficha.cpp.o"
+},
+{
+  "directory": "/home/alvaro/Desktop/3inarow/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/alvaro/Desktop/3inarow/build -I/home/alvaro/Desktop/3inarow/c++ -I/home/alvaro/Desktop/3inarow/build/3raya_autogen/include -I/home/alvaro/Desktop/3inarow/c++/./include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -pthread -g -std=gnu++17 -fPIC -o CMakeFiles/3raya.dir/src/juego.cpp.o -c /home/alvaro/Desktop/3inarow/c++/src/juego.cpp",
+  "file": "/home/alvaro/Desktop/3inarow/c++/src/juego.cpp",
+  "output": "CMakeFiles/3raya.dir/src/juego.cpp.o"
+},
+{
+  "directory": "/home/alvaro/Desktop/3inarow/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/alvaro/Desktop/3inarow/build -I/home/alvaro/Desktop/3inarow/c++ -I/home/alvaro/Desktop/3inarow/build/3raya_autogen/include -I/home/alvaro/Desktop/3inarow/c++/./include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -pthread -g -std=gnu++17 -fPIC -o CMakeFiles/3raya.dir/src/jugador.cpp.o -c /home/alvaro/Desktop/3inarow/c++/src/jugador.cpp",
+  "file": "/home/alvaro/Desktop/3inarow/c++/src/jugador.cpp",
+  "output": "CMakeFiles/3raya.dir/src/jugador.cpp.o"
+},
+{
+  "directory": "/home/alvaro/Desktop/3inarow/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/alvaro/Desktop/3inarow/build -I/home/alvaro/Desktop/3inarow/c++ -I/home/alvaro/Desktop/3inarow/build/3raya_autogen/include -I/home/alvaro/Desktop/3inarow/c++/./include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -pthread -g -std=gnu++17 -fPIC -o CMakeFiles/3raya.dir/src/main.cpp.o -c /home/alvaro/Desktop/3inarow/c++/src/main.cpp",
+  "file": "/home/alvaro/Desktop/3inarow/c++/src/main.cpp",
+  "output": "CMakeFiles/3raya.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/alvaro/Desktop/3inarow/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/alvaro/Desktop/3inarow/build -I/home/alvaro/Desktop/3inarow/c++ -I/home/alvaro/Desktop/3inarow/build/3raya_autogen/include -I/home/alvaro/Desktop/3inarow/c++/./include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -pthread -g -std=gnu++17 -fPIC -o CMakeFiles/3raya.dir/src/tablero.cpp.o -c /home/alvaro/Desktop/3inarow/c++/src/tablero.cpp",
+  "file": "/home/alvaro/Desktop/3inarow/c++/src/tablero.cpp",
+  "output": "CMakeFiles/3raya.dir/src/tablero.cpp.o"
+},
+{
+  "directory": "/home/alvaro/Desktop/3inarow/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/alvaro/Desktop/3inarow/build -I/home/alvaro/Desktop/3inarow/c++ -I/home/alvaro/Desktop/3inarow/build/3raya_autogen/include -I/home/alvaro/Desktop/3inarow/c++/./include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -pthread -g -std=gnu++17 -fPIC -o CMakeFiles/3raya.dir/src/tablerografico.cpp.o -c /home/alvaro/Desktop/3inarow/c++/src/tablerografico.cpp",
+  "file": "/home/alvaro/Desktop/3inarow/c++/src/tablerografico.cpp",
+  "output": "CMakeFiles/3raya.dir/src/tablerografico.cpp.o"
+},
+{
+  "directory": "/home/alvaro/Desktop/3inarow/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/alvaro/Desktop/3inarow/build -I/home/alvaro/Desktop/3inarow/c++ -I/home/alvaro/Desktop/3inarow/build/3raya_autogen/include -I/home/alvaro/Desktop/3inarow/c++/./include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -pthread -g -std=gnu++17 -fPIC -o CMakeFiles/3raya.dir/src/ventana.cpp.o -c /home/alvaro/Desktop/3inarow/c++/src/ventana.cpp",
+  "file": "/home/alvaro/Desktop/3inarow/c++/src/ventana.cpp",
+  "output": "CMakeFiles/3raya.dir/src/ventana.cpp.o"
+},
+{
+  "directory": "/home/alvaro/Desktop/3inarow/build",
+  "command": "/usr/bin/g++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/home/alvaro/Desktop/3inarow/build -I/home/alvaro/Desktop/3inarow/c++ -I/home/alvaro/Desktop/3inarow/build/3raya_autogen/include -I/home/alvaro/Desktop/3inarow/c++/./include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -pthread -g -std=gnu++17 -fPIC -o CMakeFiles/3raya.dir/src/consola.cpp.o -c /home/alvaro/Desktop/3inarow/c++/src/consola.cpp",
+  "file": "/home/alvaro/Desktop/3inarow/c++/src/consola.cpp",
+  "output": "CMakeFiles/3raya.dir/src/consola.cpp.o"
+}
+]

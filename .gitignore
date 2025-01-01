@@ -1,0 +1,5 @@
+__pycache__
+.vscode/settings.json
+build/CMakeCache.txt
+build/cmake_install.cmake
+build/.cmake/api/v1/query/client-vscode/query.json

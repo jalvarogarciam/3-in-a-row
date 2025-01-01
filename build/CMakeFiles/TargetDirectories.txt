@@ -1,0 +1,7 @@
+/home/alvaro/Desktop/3inarow/build/CMakeFiles/3raya.dir
+/home/alvaro/Desktop/3inarow/build/CMakeFiles/mrproper.dir
+/home/alvaro/Desktop/3inarow/build/CMakeFiles/zip.dir
+/home/alvaro/Desktop/3inarow/build/CMakeFiles/edit_cache.dir
+/home/alvaro/Desktop/3inarow/build/CMakeFiles/rebuild_cache.dir
+/home/alvaro/Desktop/3inarow/build/CMakeFiles/3raya_autogen_timestamp_deps.dir
+/home/alvaro/Desktop/3inarow/build/CMakeFiles/3raya_autogen.dir
