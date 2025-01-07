@@ -8,33 +8,46 @@ class Board:
     '''
 
     @property
-    def grid(self): return tuple([tuple(row) for row in self.__grid])
+    def grid(self): 
+        return tuple([tuple([Cell(cell) for cell in row ]) for row in self.__grid])
     @property
     def dim(self): return self.__dim
 
-    def __init__(self):
-        self.__dim = 3
-        self.__grid: tuple[tuple[Cell]] = [
-            [Cell() for _ in range(self.dim)] for _ in range(self.dim)
-        ]
+    def __init__(self, *args):
+        '''
+        Creates a dim x dim board, where dim is specified in the args (default is 3)
+        Creates a copy of the board if another board is passed as an argument
+        Initially, all cells are empty.
+        '''
+        if len(args) == 1 and type(args[0]) == Board:
+            self.__dim = args[0].dim
+            self.__grid = args[0].grid
+        else:
+            dim = 3 if len(args) == 0 or type(args[0]) != int else args[0]
+
+            self.__dim = dim
+            # create a grid of empty cells
+            self.__grid: tuple[tuple[Cell]] = [
+                [Cell() for _ in range(self.dim)] for _ in range(self.dim)
+            ]
+
+
 
     def __call__(self, row:int, col:int)->Cell:
         '''
-        Returns the cell at the given row and column
+        Returns a copy of the cell at the given row and column
         '''
-        try: return self.__grid[row][col]
+        try: return Cell(self.__grid[row][col]) # return a copy of the cell
         except IndexError: raise ValueError("Invalid row or column")
     
     def __iter__(self): return iter(self.grid)
-    
-
-    
+        
     def circle(self, row:int, col:int)->bool:
         '''
         Places a circle in the cell at the given row and column
         Returns True if the circle is placed successfully, False otherwise
         '''
-        return self(row,col).circle()
+        return self.__grid[row][col].circle()
     
 
     def cross(self, row:int, col:int)->bool:
@@ -42,46 +55,13 @@ class Board:
         Places a cross in the cell at the given row and column
         Returns True if the cross is placed successfully, False otherwise
         '''
-        return self(row,col).cross()
+        return self.__grid[row][col].cross()
     
-    def free_cells(self)->list[tuple[int]]:
+    def empty_cells(self)->list[tuple[int]]:
         '''
         Returns a list of tuples containing the row and column of the free cells
         '''
         return [(i,j) for i in range(self.dim) for j in range(self.dim) if self(i,j).empty()]
-
-    def __ways(self)->tuple[tuple[Cell]]:
-        '''
-        Returns a tuple of all the ways to win the game
-        '''
-        if self.dim == None:return # if nrows != ncols, the method will not work
-
-        ways: list[tuple[str]] = []
-
-        for i in range(self.dim): # rows and columns
-            ways.append(tuple([self(i,j) for j in range(self.dim)])) # rows
-            ways.append(tuple([self(j,i) for j in range(self.dim)])) # columns
-        # diagonals
-        ways.append(tuple([self(i,i) for i in range(self.dim)]))
-        ways.append(tuple([self(i,self.dim-1-i) for i in range(self.dim)]))
-    
-        return tuple(ways)
-
-    def winner(self)->str:
-        '''
-        Returns the winner of the game ('x' or 'o') if there is one, otherwise returns '-'
-        '''
-        for way in self.__ways():
-            if all( cell.circled() for cell in way): return Cell.CIRCLE
-            if all( cell.crossed() for cell in way): return Cell.CROSS
-        return Cell.EMPTY
-    
-    def end(self)->bool:
-        '''
-        Returns True if the game has ended, False otherwise
-        '''
-        if self.winner() != Cell.EMPTY : return True 
-        else : return self.free_cells() == []
 
     def __str__(self)->str: 
         return '\n'.join([' '.join([str(c) for c in row]) for row in self.__grid])

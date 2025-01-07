@@ -1,5 +1,10 @@
 
 class Cell:
+    '''
+    A class that represents a cell of the board in a x-in-a-row game
+    Initialy, the cell is empty, and it can be filled with a cross or a circle.
+    When filled, the cell cannot be changed.
+    '''
     CROSS =  'x'
     CIRCLE = 'o'
     EMPTY =  '-'
@@ -7,8 +12,12 @@ class Cell:
     @property
     def symbol(self): return self.__symbol
 
-    def __init__(self, symbol:str=EMPTY):
-        self.__symbol = Cell.EMPTY
+    def __init__(self, other: 'Cell' = None):
+        '''
+        Creates an empty cell by default, or a cell with the same 
+        symbol as the other cell 
+        '''
+        self.__symbol = Cell.EMPTY if not other else other.__symbol
 
     def empty(self)->bool:
         '''
