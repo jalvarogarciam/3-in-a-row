@@ -2,7 +2,7 @@ from cell import Cell
 from board import Board
 from player import Player
 from move import Move
-from trace import Trace
+#from trace import Trace
 
 class Game:
     '''
@@ -14,9 +14,9 @@ class Game:
     @board.setter
     def board(self, other:Board): self.__board = Board(other)
     @property
-    def playero(self)->Player: return self.__playerx
+    def playero(self)->Player: return self.__playero
     @property
-    def playerx(self)->Player: return self.__playero
+    def playerx(self)->Player: return self.__playerx
     @property
     def current_player(self)->Player: return self.__current_player
     @property
@@ -47,13 +47,6 @@ class Game:
 
     def __str__(self)->str: return f"{self.board}\n{self.current_player}'s turn"
     def __repr__(self)->str: return str(self)
-
-    def __next_player(self):
-        '''
-        Changes the current player to the other player
-        '''
-        if self.__current_player is self.__playerx: self.__current_player = self.__playero
-        else: self.__current_player = self.__playerx
     
     def play(self, row:int, col:int)->bool:
         '''
@@ -123,3 +116,12 @@ class Game:
         Logs the move made by the current player
         '''
         self.__trace.append(Move(row, col, self.current_player.symbol))
+    
+    def __next_player(self):
+        '''
+        Changes the current player to the other player
+        '''
+        if self.__current_player is self.__playerx: 
+            self.__current_player = self.__playero
+        else: 
+            self.__current_player = self.__playerx

@@ -8,10 +8,10 @@ class Board:
     '''
 
     @property
-    def grid(self): 
+    def grid(self)->tuple[tuple[Cell]]: 
         return tuple([tuple([Cell(cell) for cell in row ]) for row in self.__grid])
     @property
-    def dim(self): return self.__dim
+    def dim(self)->int: return self.__dim
 
     def __init__(self, *args):
         '''
@@ -21,11 +21,10 @@ class Board:
         '''
         if len(args) == 1 and type(args[0]) == Board:
             self.__dim = args[0].dim
-            self.__grid = args[0].grid
-        else:
-            dim = 3 if len(args) == 0 or type(args[0]) != int else args[0]
+            self.__grid = args[0].__grid.copy()
 
-            self.__dim = dim
+        else:
+            self.__dim = 3 if len(args) == 0 or type(args[0]) != int else args[0]
             # create a grid of empty cells
             self.__grid: tuple[tuple[Cell]] = [
                 [Cell() for _ in range(self.dim)] for _ in range(self.dim)
@@ -47,7 +46,8 @@ class Board:
         Places a circle in the cell at the given row and column
         Returns True if the circle is placed successfully, False otherwise
         '''
-        return self.__grid[row][col].circle()
+        try: return self.__grid[row][col].circle()
+        except IndexError: return False
     
 
     def cross(self, row:int, col:int)->bool:
@@ -55,13 +55,14 @@ class Board:
         Places a cross in the cell at the given row and column
         Returns True if the cross is placed successfully, False otherwise
         '''
-        return self.__grid[row][col].cross()
+        try: return self.__grid[row][col].cross()
+        except IndexError: return False
     
-    def empty_cells(self)->list[tuple[int]]:
+    def empty_cells(self)->tuple[tuple[int]]:
         '''
-        Returns a list of tuples containing the row and column of the free cells
+        Returns a tuple of tuples containing the row and column of the free cells
         '''
-        return [(i,j) for i in range(self.dim) for j in range(self.dim) if self(i,j).empty()]
+        return tuple([(i,j) for i in range(self.dim) for j in range(self.dim) if self(i,j).empty()])
 
     def __str__(self)->str: 
         return '\n'.join([' '.join([str(c) for c in row]) for row in self.__grid])

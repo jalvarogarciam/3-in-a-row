@@ -37,7 +37,7 @@ class Cell:
         '''
         return self.__symbol == Cell.CIRCLE
 
-    def __fill(self, symbol:str):
+    def __fill(self, symbol:str)->bool:
         '''
         Fills the cell with the given symbol
         Returns True if the cell is filled successfully, False otherwise
@@ -50,14 +50,14 @@ class Cell:
         self.__symbol = symbol
         return True
                 
-    def cross(self):
+    def cross(self)->bool:
         '''
         Fills the cell with a cross
         Returns True if the cell is filled successfully, False otherwise
         '''
         return self.__fill(Cell.CROSS)
     
-    def circle(self):
+    def circle(self)->bool:
         '''
         Fills the cell with a circle
         Returns True if the cell is filled successfully, False otherwise
